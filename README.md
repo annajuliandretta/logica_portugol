@@ -8,4 +8,5 @@ Este repositório contém exercícios e práticas desenvolvidas durante meus est
 - Condicionais (simples e aninhadas): uso de se\senão.
 
 *Objetivo*
+
 Desenvolver o raciocínio lógico e os fundamentos de programação, como base para o aprendizado de outras linguagens.
