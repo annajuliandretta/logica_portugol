@@ -1,5 +1,6 @@
 # logica_portugol
 *Lógica de Programação em Portugol*
+
 Este repositório contém exercícios e práticas desenvolvidas durante meus estudos de lógica de programação utilizando Portugol.
 
 *Estrutura*
