@@ -1,0 +1,44 @@
+﻿\\ 8) Desenvolva um algoritmo que implemente uma calculadora de 4 operações. O algoritmo deve solicitar que o usuário informe
+\\ três dados: o primeiro operando, o operador (+,-,*,/) e o segundo operando. O algoritmo deve mostrar na tela a operação e
+\\ seu resultado. Se o operador informado pelo usuário for inválido mostrar a mensagem “Operador inválido” e não realizar a operação matemática.
+\\ Se o segundo operando for igual a 0 (zero) e o operador escolhido for a divisão (/), mostrar na tela a mensagem “Divisão por Zero!” e não realizar a operação. 
+
+algoritmo "operações entre 2 numeros - cond. aninhada"
+var
+n1,n2:inteiro
+operacao:literal
+
+
+inicio
+escreval("Digite o operador, a operação e o operando: ")
+leia(n1,operacao,n2)
+
+
+se (operacao <> "*" e operacao <> "+" e operacao <> "-" e operacao <>"/") entao
+         escreval ("Operação invalida!")
+senao
+         se (operacao = "*") entao
+         escreval (n1,operacao,n2)
+         escreval( "Resultado: ", n1 * n2)
+         senao
+                  se (operacao = "+") entao
+                           escreval (n1,operacao,n2)
+                           escreval( "Resultado: ", n1 + n2)
+                  senao
+                           se (operacao = "-") entao
+                                    escreval(n1,operacao,n2)
+                                    escreval( "Resultado: ", n1 -n2)
+                           senao
+                                    se (operacao = "/" e n2 <>0) entao
+                                             escreval(n1,operacao,n2)
+                                             escreval( "Resultado: ", n1 /n2)
+                                    senao
+                                             escreval("Divisão por zero!")
+                                                               fimse
+                                             fimse         
+                                    fimse
+                  fimse
+fimse
+
+
+fimalgoritmo

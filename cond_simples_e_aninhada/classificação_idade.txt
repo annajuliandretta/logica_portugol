@@ -1,0 +1,30 @@
+﻿\\ 5)Desenvolva um algoritmo que solicite ao usuário informar um valor inteiro que corresponda a idade de um nadador. 
+\\ Após, o algoritmo deverá classificar o nadador nas categorias abaixo e mostrar esta informação na tela do computador. 
+\\ As categorias são: • Infantil A : 5 a 7 anos; • Infantil B : 8 a 10 anos; • Juvenil A : 11 a 13 anos; • Juvenil B : 14 a 17 anos;
+\\ • Sênior : maiores de 18 anos. Exemplo: Se o usuário informar que o nadador possui 12 anos, o programa deverá mostrar na tela a mensagem “Juvenil A”
+
+algoritmo "classificação de idade - cond. simples"
+var
+idade:inteiro
+
+inicio
+escreval("Digite a idade:")
+leia(idade)
+
+se (idade >=5 e idade <=7) entao
+         escreval ("Infantil A")
+fimse
+se (idade >=8 e idade <= 10) entao
+         escreval ("Infantil B")
+fimse
+se (idade >=11 e idade <= 13) entao
+         escreval ("Juvenil A")
+fimse
+se (idade >=14 e idade <= 17) entao
+         escreval ("Juvenil B")
+fimse
+se (idade >= 18) entao
+         escreval ("Senior")
+fimse
+
+fimalgoritmo
