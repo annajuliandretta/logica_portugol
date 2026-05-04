@@ -1,0 +1,15 @@
+﻿\\ 14) Desenvolva um algoritmo que solicite ao usuário informar três valores reais que correspondam a nota de um aluno,
+\\ calcule e mostre na tela a média harmônica ponderada destas notas com peso 1 para a primeira nota, 
+\\ peso 2 para a segunda nota e peso 3 para a terceira nota. A média harmônica ponderada de um conjunto 
+\\ de valores é um valor que tende ao menor dos valores sendo calculada pelo inverso da soma do inverso 
+\\ dos valores considerando sua relevância (peso):
+
+
+algoritmo “Média Harmônica Ponderada”
+var
+prova1,prova2,prova3:real
+inicio
+escreval("Digite as notas das provas 1,2 e 3: ")
+leia(prova1,prova2,prova3)
+escreval("A média aritmética das três provas é: " ,6/(1/prova1 + 2/prova2 + 3/prova3))
+fimalgoritmo

@@ -1,0 +1,15 @@
+﻿\\ 28) Desenvolva um algoritmo que solicite ao usuário informar dois valores inteiros.
+\\ O algoritmo deverá calcular a diferença do primeiro pelo segundo número e após mostrar na tela o módulo desta diferença, isto é, |valor1-valor2|. 
+
+
+
+
+algoritmo "módulo da diferença"
+var
+n1,n2,modulo:inteiro
+inicio
+escreva ("Digite dois valores inteiros:")
+leia(n1,n2)
+modulo<-abs(n1-n2)
+escreval ("Modulo da subtração",n1," - ",n2," é ",modulo)
+fimalgoritmo

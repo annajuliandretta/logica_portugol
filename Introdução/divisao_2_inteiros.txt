@@ -1,0 +1,17 @@
+﻿\\4) Desenvolva um algoritmo que solicite ao usuário digitar dois valores inteiros.
+\\Após a digitação, o computador deverá executar a divisão destes números e
+\\mostrar o resultado na tela do computador.
+
+
+algoritmo “divisão entre dois números inteiros”
+
+
+var
+n1,n2:inteiro
+resultado:real
+inicio
+escreval("Digite dois números inteiros: ")
+leia(n1,n2)
+resultado<-n1/n2
+escreval(n1," dividido por ",n2," resulta em: ",resultado)
+fimalgoritmo

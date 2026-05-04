@@ -1,0 +1,14 @@
+﻿\\ 6) Desenvolva um algoritmo que solicite ao usuário informar dois valores inteiros.
+\\ Após a digitação, o computador deverá executar a operação de potenciação deste
+\\ número, onde o primeiro número informado é a base e o segundo número
+\\ informado é o expoente. O resultado desta operação deve ser mostrado na tela do computador. 
+
+
+algoritmo “potenciação entre dois números”
+var
+n1,n2: inteiro
+inicio
+escreval("Digite dois números inteiros: ")
+leia(n1, n2)
+escreval(n1," elevado a ",n2," resulta em ",n1^n2)
+fimalgoritmo

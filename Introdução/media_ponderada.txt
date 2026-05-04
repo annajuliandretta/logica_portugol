@@ -1,0 +1,19 @@
+﻿\\ 12) Desenvolva um algoritmo que solicite ao usuário informar três valores reais que correspondam a nota de um aluno,
+\\ calcule e mostre na tela a média ponderada com peso 2,5 para a primeira e segunda notas e peso 5 para a terceira nota.
+\\ A média ponderada de um conjunto de valores é calculada multiplicando os pesos pelos respectivos valores, somando estes
+\\ valores e dividindo pela soma dos pesos: 𝑀é𝑑𝑖𝑎 = 2.5∗𝑁1+2.5∗𝑁2+5∗𝑁3
+
+
+
+
+algoritmo "Média Ponderada"
+var
+x,y,z,media:real
+
+
+inicio
+escreva ("informe tres numeros:")
+leia (x,y,z)
+media<-(2.5*x+2.5*y+5*z)/10
+escreval ("media dos 3 numeros: ",media)
+fimalgoritmo

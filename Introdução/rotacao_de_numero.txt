@@ -1,0 +1,19 @@
+﻿\\ 52) Desenvolva um algoritmo que solicite ao usuário um número 10 dígitos. 
+\\ O algoritmo deve rotacionar os dígitos uma posição para a esquerda, de modo que o primeiro dígito passe a ocupar a última posição.
+\\ O novo número deve ser mostrado na tela.
+
+
+algoritmo "uma rotação para esquerda de número"
+
+
+var
+numero,primeirodigito,resto:inteiro
+inicio
+escreval("Informe um numero de 10 digitos: ")
+leia(numero)
+primeirodigito<-numero\1000000000
+resto<-numero%1000000000
+escreval("Numero final: ", resto*10+primeirodigito)
+
+
+fimalgoritmo

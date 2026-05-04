@@ -1,0 +1,16 @@
+﻿\\ 1)Desenvolva um algoritmo que solicite ao usuário digitar dois valores inteiros.
+\\Após a digitação, o computador deverá executar a soma destes números e mostrar
+\\o resultado na tela do computador.
+
+
+algoritmo “soma de dois valores inteiros”
+var
+n1,n2:inteiro
+
+inicio
+escreva ("Informe dois números :")
+leia (n1,n2)
+
+escreval ("Soma = ",n1+n2)
+
+fimalgoritmo

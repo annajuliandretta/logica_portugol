@@ -1,0 +1,23 @@
+﻿\\ 38) Desenvolva um algoritmo que solicite ao usuário digitar um tempo em segundos. 
+\\ Após a digitação, o computador deverá converter este tempo para horas, minutos e segundos. 
+\\ Mostrar esta informação na tela do computador. 
+
+
+algoritmo "segundos em horas, minutos e segundos"
+var 
+total,h,m,s,aux:inteiro
+
+
+inicio
+escreval ("Informe o total de segundos:")
+leia(total)
+h<-total\3600
+aux<-total%3600
+m<-aux\60
+s<-aux%60
+
+
+escreval (total," segundos equivale a ",h," horas ",m," minutos e ",s," segundos")
+
+
+fimalgoritmo

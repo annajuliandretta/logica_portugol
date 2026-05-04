@@ -1,0 +1,12 @@
+﻿\\ 15) Desenvolva um algoritmo que solicite ao usuário informar dois valores reais que correspondam a nota de um aluno,
+\\  calcule e mostre qual o valor mínimo da terceira nota para que este aluno seja aprovado considerando média harmônica 6. 
+
+
+algoritmo”descobrindo nota 3”
+var
+nota1,nota2:real
+inicio
+escreval("Digite a nota da prova 1 e da prova 2: ")
+leia(nota1,nota2)
+escreval("A nota mínima para a prova 3 é: ", (3*nota1*nota2)/(nota1*nota2-nota2-2*nota1))
+fimalgoritmo

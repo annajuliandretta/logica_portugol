@@ -1,0 +1,37 @@
+﻿\\ 49) Desenvolva um algoritmo que solicite ao usuário informar um valor inteiro em reais. 
+\\ O algoritmo deve calcular e mostrar na tela qual o menor número possível de notas e moedas de 100,50,20,10,5,2 e 1
+\\ real em que o valor pode ser decomposto. 
+
+
+algoritmo " mínimos de notas"
+
+
+var
+valor,aux,n100,n50,n20,n10,n5,n2,n1,total:inteiro
+
+
+inicio
+escreval ("Informe o valor total: ")
+leia(valor)
+
+
+n100<-valor\100
+aux<-valor%100
+n50<-aux\50
+aux<-aux%50
+n20<-aux\20
+aux<-aux%20
+n10<-aux\10
+aux<-aux%10
+n5<-aux\5
+aux<-aux%5
+n2<-aux\2
+aux<-aux%2
+n1<-aux
+
+
+total<-n100+n50+n20+n10+n5+n2+n1
+escreval ("A quantidade mínima de notas é: ",total)
+
+
+fimalgoritmo

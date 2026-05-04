@@ -1,0 +1,22 @@
+﻿\\ 5) Desenvolva um algoritmo que solicite ao usuário digitar dois valores reais. Após
+\\ a digitação, o computador deverá efetuar as operações de adição, subtração,
+\\ multiplicação e divisão destes valores. Os quatro resultados deverão ser
+\\ mostrados na tela assim como os números digitados pelo usuário. 
+
+
+algoritmo "operações entre 2 números reais"
+var
+n1,n2:real
+
+
+inicio
+escreva ("Informe dois números :")
+leia (n1,n2)
+escreval ("Numeros digitados:",n1, " e ",n2)
+escreval ("Soma = ",n1+n2)
+escreval ("Subtracao =",n1-n2)
+escreval ("Multipica = ", n1*n2)
+escreval ("Divisao = ", n1/n2)
+
+
+fimalgoritmo
