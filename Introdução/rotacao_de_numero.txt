@@ -3,17 +3,18 @@
 \\ O novo número deve ser mostrado na tela.
 
 
-algoritmo "uma rotação para esquerda de número"
 
+algoritmo "rotação p/ esquerda 10 digitos"
 
-var
-numero,primeirodigito,resto:inteiro
+var 
+dig1,num: inteiro
 inicio
-escreval("Informe um numero de 10 digitos: ")
-leia(numero)
-primeirodigito<-numero\1000000000
-resto<-numero%1000000000
-escreval("Numero final: ", resto*10+primeirodigito)
+escreval("Digite um número com 10 digitos: ")
+leia(num)
 
+dig1 <- num\1000000000 // separa o primeiro dígito
+num <- num%1000000000 // salva o número sem o primeiro dgito na variável num.
 
+// multiplicar por 10 move o numero uma casa para a esquerda para dar espaço para somar o dígito separado.
+escreval("O número rotacionado é: ",num*10+dig1)
 fimalgoritmo
