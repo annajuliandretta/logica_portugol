@@ -1,0 +1,30 @@
+//17) Desenvolva um algoritmo que solicite ao usuário digitar três números inteiros. O algoritmo deverá mostrar na tela os números //informados em ordem crescente. Exemplo: se o usuário informar os números 15, 43 e 34 deverá ser mostrado na tela a mensagem “Números em //ordem crescente: 15, 34 e 43”.
+algoritmo "ordem crescente de 3 números inteiros"
+
+var
+v1,v2,v3:inteiro
+inicio
+escreval("Digite três numeros inteiros: ")
+leia(v1,v2,v3)
+se (v1>= v2 e v2>= v3) entao
+         escreval ("Ordem crescente: " ,v3," ",v2," ",v1)
+senao
+         se (v1>= v3 e v3>= v2) entao
+                  escreval ("Ordem crescente: " ,v2," ",v3," ",v1)
+         senao
+                  se (v2>= v1 e v1>= v3) entao
+                           escreval ("Ordem crescente: " ,v3," ",v1," ",v2)
+                  senao
+                           se (v2>= v3 e v3>= v1) entao
+                                    escreval ("Ordem crescente: " ,v1," ",v3," ",v2)
+                           senao
+                                    se (v3>= v1 e v1>= v2) entao
+                                             escreval ("Ordem crescente: " ,v2," ",v1," ",v3)
+                                    senao
+                                             escreval ("Ordem crescente: " ,v1," ",v2," ",v3)
+                                    fimse
+                           fimse
+                  fimse
+         fimse
+fimse
+fimalgoritmo

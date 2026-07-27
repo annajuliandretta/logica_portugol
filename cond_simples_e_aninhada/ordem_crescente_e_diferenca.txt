@@ -1,0 +1,17 @@
+//13) Desenvolva um algoritmo que solicite ao usuário digitar dois números reais. O algoritmo deverá verificar entre estes dois valores qual //é o maior valor e mostrar na tela a diferença do maior pelo menor valor. Exemplo: se o usuário informar os números 97.6 e 32.65, deverá //ser mostrado na tela a mensagem “ 97.6 – 32.65 = 64.95”. 
+
+algoritmo "ordem crescente e diferença"
+var menor, maior,aux: real
+
+inicio
+escreval("Digite dois números reais: ")
+leia(menor,maior)
+
+se (menor > maior)entao
+         aux <- menor
+         menor <- maior
+         maior <- aux
+fimse
+escreval(maior," - ",menor," = ",maior-menor)
+
+fimalgoritmo

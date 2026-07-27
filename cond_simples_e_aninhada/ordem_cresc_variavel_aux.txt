@@ -1,0 +1,27 @@
+algoritmo "ex 17 - variavel auxiliar"
+var
+v1,v2,v3,aux:inteiro
+inicio
+escreval("Digite três numeros inteiros: ")
+leia(v1,v2,v3)
+
+se (v1>v2)entao
+aux <- v1
+v1 <- v2
+v2 <- aux
+fimse
+
+se (v1>v3) entao
+aux <- v1
+v1 <- v3
+v3 <- aux
+fimse
+
+se (v2>v3) entao
+aux <- v2
+v2 <- v3
+v3 <- aux
+fimse
+
+escreval ("ordem crescente: ",v1," ",v2," ",v3)
+fimalgoritmo

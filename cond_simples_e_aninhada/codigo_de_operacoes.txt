@@ -1,0 +1,31 @@
+
+//6) Desenvolva um algoritmo que solicite que o usuário informe um código e três valores nomeados como a, b e c. O código vai determinar //qual operação o algoritmo irá realizar: ✔ código = 1: multiplicar os três valores; ✔ código = 2: somar os três valores; ✔ código = 3: // subtrair os três valores; ✔ código = 4: somar o cubo dos 3 valores; É necessário validar o código digitado pelo usuário, pois os //códigos válidos são os valores 1, 2, 3 e 4. Se o código informado for diferente destes, o algoritmo deverá mostra na tela a mensagem //mensagem "Código Inválido" e não realizar nenhuma operação matemática. Além disso, o algoritmo deverá validar os valores a,b e c. Estes //valores devem ser diferentes de zero e positivos. Se algum dos valores for igual ou menor que zero, o algoritmo deverá mostra na tela a //mensagem "Valor(es) inválido(s).” e não realizar nenhuma operação matemática.
+
+algoritmo "operações entre 2 números indicadas por códigos"
+
+var
+cod,a,b,c:inteiro
+
+inicio
+escreval ("Digite 3 numeros inteiros: ")
+leia (a,b,c)
+escreval ("Digite o código da operação: ")
+leia(cod)
+se (cod=1) entao
+	escreval("Multiplicação: ",a*b*c)
+fimse
+se (cod=2) entao
+	escreval("Adição: ",a+b+c)
+fimse
+se (cod=3) entao
+	escreval("Subtração: ",a-b-c)
+fimse
+se (cod=4) entao
+	escreval("Soma do cubo: ",a^3+ b^3+c^3)
+fimse
+
+se (cod < 1 ou cod > 4)
+	escreval ("código inválido")
+fimse
+
+fimalgoritmo
