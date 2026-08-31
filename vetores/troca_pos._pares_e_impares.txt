@@ -1,0 +1,31 @@
+//41) Desenvolva um algoritmo que solicite ao usuário informar 20 valores inteiros e armazene estes valores em um vetor. O algoritmo //deverá trocar cada elemento que estiver em posição ímpar pelo elemento da posição par imediatamente a seguir. O algoritmo deverá //mostrar os elementos do vetor na tela, antes e depois da troca dos elementos 
+
+algoritmo "troca elementos pos. pares com impares"
+
+var
+i,aux: inteiro
+vet: vetor[0..19] de inteiro
+inicio
+escreval("Digiite 20 números inteiros: ")
+para i de 0 ate 19 faca
+         leia (vet[i])
+fimpara
+
+escreval("Elementos do vetor: ")
+para i de 0 ate 19 faca
+         escreva (" ",vet[i]," ")
+fimpara
+// troca dos conteúdos das posições ímpares pelos conteúdos das pares.
+para i de 0 ate 18 passo 2 faca 
+         aux <-vet[i]
+         vet[i] <- vet[i+1]
+         vet[i+1] <- aux        
+fimpara
+escreval()
+escreval("Elementos do vetor com a troca: ")
+para i de 0 ate 19 faca
+         escreva (" ",vet[i]," ")
+fimpara
+
+
+fimalgoritmo

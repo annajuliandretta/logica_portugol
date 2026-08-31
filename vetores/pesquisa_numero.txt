@@ -1,0 +1,26 @@
+//11) Desenvolva um algoritmo que solicite ao usuário informar 10 valores inteiros e armazene estes valores em um vetor. O algoritmo //deverá ler também um outro valor inteiro N e verificar se este valor N é um elemento do vetor. O algoritmo deverá mostrar na tela //uma mensagem informando se o valor N é ou não um elemento do vetor. Exemplo: se o usuário informar os valores: V[0]= 2 V[2]= 87 //V[4]= 43 V[6]= 23 V[8]= 121 V[1]= 76 V[3]= 10 V[5]= 54 V[7]= 88 V[9]= 231 Se o usuário digitar o valor 23, o algoritmo deverá //mostrar na tela uma mensagem indicando que este valor está contido no vetor. Se o usuário digitar o valor 50, o algoritmo deverá //mostrar na tela uma mensagem indicando que este valor não está contido no vetor. 
+
+algoritmo "pesquisando numero no vetor"
+var
+v:vetor[0..9] de inteiro
+i,num,flag:inteiro
+inicio
+escreval("Digite os 10 valores do vetor: ")
+para i de 0 ate 9 faca
+         leia(v[i])
+fimpara
+escreval("Digite o número a ser pesquisado no vetor: ")
+leia(num)
+flag <- 0
+para i de 0 ate 9 faca 
+         se (v[i] = num) entao
+                  flag<-1
+         fimse
+fimpara
+se (flag = 1) entao
+         escreval("O valor ",num, " foi encontrado no vetor.")
+senao
+         escreval("O valor" ,num," NÃO foi encontrado no vetor.")
+fimse
+
+fimalgoritmo

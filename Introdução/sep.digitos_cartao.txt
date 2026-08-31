@@ -1,0 +1,39 @@
+//1) (3,0) O número do cartão de crédito é um código único composto de 10 dígitos, separados
+//de quatro em quatro. Este número identifica a bandeira do cartão, informações sobre a
+//instituição financeira e os dados da conta e identificação.
+//Desenvolva um algoritmo que leia um único número inteiro de 10 dígitos e mostre o número
+//que representa as informações sobre dados da conta e identificação ( 6º ao 9º dígitos, como
+//um número único).
+//Formato do número: XXXXXNNNNX, onde N representa os dados da conta e identificação.
+
+algoritmo "exercicio 1 prova"
+var
+numero,d1,d2,d3,d4,d5,d6,d7,d8,d9, d10,resto:inteiro
+inicio
+escreval("Digite o número do cartão: ")
+leia(numero)
+
+d1 <- numero\1000000000
+resto <- numero % 1000000000
+d2 <- resto\ 100000000
+resto <- numero % 100000000
+d3 <- resto\ 10000000
+resto <- numero % 10000000
+d4 <- resto\ 1000000
+resto <- numero % 1000000
+d5 <- resto\ 100000
+resto <- numero % 100000
+d6 <- resto\ 10000
+resto <- numero % 10000
+d7 <- resto\ 1000
+resto <- numero % 1000
+d8 <- resto\ 100
+resto <- numero % 100
+d9 <- resto\ 10
+d10 <- resto%10
+
+
+escreval("Número do digito 6 ao 9 : ", d6*1000 + d7*100 + d8*10+ d9)
+
+fimalgoritmo
+

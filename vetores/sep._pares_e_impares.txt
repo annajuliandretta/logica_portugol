@@ -1,0 +1,28 @@
+//Desenvolva um algoritmo que solicite ao usuário informar 10 valores inteiros e armazene estes valores em um vetor. 
+// Após o algoritmo deverá mostrar na tela os números pares informados e em seguida os números ímpares informados. 
+
+algoritmo "Mostrando nºs pares e ímpares de um vetor"
+var
+vet: vetor [0..9] de inteiro
+i: inteiro
+
+inicio
+escreval("Digite os números do vetor: ")
+para i de 0 ate 9 faca // lê e armazena os valores dentro do vetor
+         leia(vet[i])
+fimpara
+
+escreval("Numeros pares:")
+para i de 0 ate 9 faca //percorre todo o vetor e mostra só os números pares
+         se (vet[i]% 2 = 0) entao
+                  escreva(" ",vet[i])
+         fimse
+fimpara
+escreval()
+escreval("Números ímpares:")
+para i de 0 ate 9 faca //percorre todo o vetor e mostra só os números ímpares
+         se(vet[i]% 2 = 1) entao
+                  escreva(" ", vet[i])
+         fimse
+fimpara
+fimalgoritmo

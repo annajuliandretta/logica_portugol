@@ -1,0 +1,55 @@
+//Desenvolva um algoritmo que solicite ao usuário informar 8 valores inteiros e armazene estes
+//valores em um vetor. Após ler e armazenar os dados no vetor, o algoritmo deverá calcular e mostrar na
+//tela a soma dos números pares e a quantidade dos números ímpares, mostrando o relatório abaixo.
+//Caso não seja informado nenhum número ímpar, mostre a mensagem “Não existe nenhum número
+//ímpar”. Caso não seja informado nenhum número par, mostre a mensagem “Não existe nenhum número par”.
+
+algoritmo "vetor + variavel contadora + variável acumuladora"
+var
+v: vetor [0..7] de inteiro
+i, tempar, temimpar,soma, qtdimpar:inteiro
+
+inicio
+escreval ("Digite os 8 números do vetor: " )
+tempar <- 0
+temimpar <- 0
+qtdimpar <- 0
+soma <- 0
+para i de 0 ate 7 faca
+	leia(v[i])
+	se (v[i] % 2 = 0) entao
+		tempar <- 1 // flag que indica se foi digitado pelo menos um número par.
+	senao
+		temimpar <- 1 // flag que indica se foi digitado pelo menos um número ímpar.
+	fimse
+fimpara
+
+se (tempar = 0) entao
+	escreval("Não existe nenhum número par!")
+senao
+	escreval("Números pares informados:")
+	para i de 0 ate 7 faca
+		se (v[i] % 2 = 0) entao
+			escreva(" ", v[i])
+			soma <- soma + v[i] // variável que soma todos os pares
+		fimse
+	fimpara
+	escreval()
+	escreval("A soma dos números pares é: ",soma)
+fimse
+
+escreval()
+se (temimpar = 0) entao
+	escreval("Não existe nenhum número ímpar!")
+senao
+	escreval("Números ímpares informados:")
+	para i de 0 ate 7 faca
+		se (v[i] % 2 = 1) entao
+			escreva(" ", v[i])
+			qtdimpar <- qtdimpar + 1 //variavel contadora de números impares
+		fimse
+	fimpara
+	escreval()
+	escreval ("Foram informados ", qtdimpar," números ímpares")
+fimse
+fimalgoritmo  

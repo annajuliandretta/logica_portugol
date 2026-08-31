@@ -1,0 +1,64 @@
+13) Desenvolva um algoritmo que solicite ao usuário informar 10 números inteiros e armazene estes números em um vetor de 10 posições. Após leia mais 10 números inteiros e armazene em um segundo vetor de 10 posições. Crie, a seguir, um terceiro vetor que seja a união dos dois vetores. O vetor união deve possuir todos os elementos dos dois vetores, mas não deve possuir valores duplicados. No final, os três vetores devem ser mostrados na tela. 
+
+algoritmo "uniao de vetores"
+var
+v1,v2:vetor[0..9] de inteiro
+uniao: vetor[0..19] de inteiro
+i,j,flag,pos:inteiro
+inicio
+pos<- 0
+escreval("Digite os 10 valores do vetor 1: ")
+para i de 0 ate 9 faca
+         leia(v1[i])
+fimpara
+escreval("Digite os 10 valores do vetor 2: ")
+para i de 0 ate 9 faca
+         leia(v2[i])
+fimpara
+para i de 0 ate 9 faca
+flag<-0 //indica que não tem número repetido
+    para j de 0 ate pos-1 faca // até "posição -1" pois é até aonde foi preenchido o vetor 
+                  se (v1[i] = uniao[j]) entao //compara os conteúdos dos vetores
+                           flag<-1 // se for igual, flag recebe 1
+                  fimse
+           fimpara
+         se(flag = 0)entao // sea flag mantém zero
+                  uniao[pos] <- v1[i] // vetor união recebe o conteudo do v1
+                  pos <- pos +1
+         fimse
+fimpara
+para i de 0 ate 9 faca
+flag<-0 
+    para j de 0 ate pos-1 faca 
+                  se (v2[i] = uniao[j]) entao 
+                           flag<-1 
+                  fimse
+           fimpara
+         se(flag = 0)entao 
+                  uniao[pos] <- v2[i] 
+                  pos <- pos +1
+         fimse
+fimpara
+
+//escreve o vetor 1
+escreval("Vetor 1: ")
+para i de 0 ate 9 faca
+         escreva(v1[i]," ")
+fimpara
+escreval()
+
+//escreve o Vetor 2
+escreval("Vetor 2: ")
+para i de 0 ate 9 faca 
+         escreva(v2[i]," ")
+fimpara
+escreval()
+
+//escreve o Vetor união
+escreval("Vetor união: ")
+para i de 0 ate pos-1 faca // porque a posição atual é sempre a que vai ser preenchida, então usamos até onde já está preenchido.       
+         escreva(uniao[i]," ")
+fimpara
+fimalgoritmo
+
+ 

@@ -1,0 +1,11 @@
+algoritmo "pares ate 50"
+var
+i, n: inteiro
+inicio
+
+para i de 2 ate 50 passo 2 faca // incrementa de 2 em 2.
+         escreval(i)
+        
+fimpara
+fimalgoritmo
+

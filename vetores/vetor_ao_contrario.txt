@@ -1,0 +1,21 @@
+// Desenvolva um algoritmo que solicite ao usuário informar 10 valores inteiros e armazene estes
+// valores em um vetor. Após o algoritmo deverá mostrar na tela os elementos do vetor na ordem contrária
+// à que foram digitados. 
+
+algoritmo "vetor em ordem contrária"
+var
+vet: vetor [0..9] de inteiro
+i:inteiro
+inicio
+escreval("Digite os 10 números do vetor: ")
+
+para i de 0 ate 9 faca
+leia(vet[i])
+fimpara
+
+escreval("O número digitado em cada posição é:")
+
+para i de 9 ate 0 passo -1 faca // necessário colocar o passo -1 para ele decrementar.
+         escreva(" V[",i,"]= ",vet[i]," ")
+fimpara
+fimalgoritmo

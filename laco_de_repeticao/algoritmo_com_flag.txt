@@ -1,0 +1,37 @@
+//22) Desenvolva um algoritmo que solicite ao usuário informar valores inteiros até que o usuário digite o valor 0 (zero). Quando o valor 0 for //digitado, o algoritmo deverá parar de solicitar novos valores e deverá mostrar na tela o menor número informado. Este algoritmo deverá //desprezar os números negativos, ou seja, deverá encontrar o menor entre os valores positivos informados. 
+
+algoritmo 
+var
+num,menor,flag:inteiro
+inicio
+
+//flag=0 indica que nenhum número positivo foi informado
+//flag=1 indica que pelo menos um número positivo foi informado
+//iniciar o valor da flag com 0, considerando que ainda não foi informado números positivos
+
+flag<-0
+escreval ("Informe diversos números. Para encerrar, digite 0")
+leia (num)
+se (num>0) entao
+         menor<-num
+         flag<-1  //número positivo informado, flag passa a valer 1
+fimse
+enquanto (num<>0) faca
+     leia (num)
+         se (flag=1) entao
+                  se (num<menor e num>0) entao
+                           menor<-num
+                  fimse
+         senao //a flag é 0, e não foi informado um número positivo na primeira digitação.
+              se (num>0) entao //testa se esse segundo numero digitado é maior que zero para então torná-lo o menor.
+                  menor<-num
+                  flag<-1
+              fimse 
+         fimse
+fimenquanto
+se (flag=1) entao
+         escreval ("Menor número positivo: ",menor)
+senao
+         escreval ("Nenhum número positivo foi informado.")
+fimse
+fimalgoritmo 

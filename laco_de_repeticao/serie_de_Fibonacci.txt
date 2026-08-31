@@ -1,0 +1,22 @@
+//80) A sequência de fibonacci, muito conhecida na matemática, é mostrada na tabela abaixo: n 0 1 2 3 4 5 6 7 8 9 10 11 12 ... 
+//fib(n) 0 1 1 2 3 5 8 13 21 34 55 89 144 …
+//Esta sequência começa com 0 e 1 e cada novo número é a soma dos dois imediatamente anteriores. 
+//Desenvolva um algoritmo que gere e mostre na tela os 100 primeiros termos da série de fibonacci. 
+
+algoritmo "Série de Fibonacci"
+var primeiro, segundo, proximo,i: inteiro
+
+inicio
+primeiro <- 0
+segundo <- 1
+escreval("50 primeiros termos da série de Fibonacci")
+escreva(primeiro," ",segundo)
+
+para i de 1 ate 48 faca
+         proximo <- primeiro + segundo
+         escreva (" ",proximo," ")
+         primeiro <- segundo
+         segundo <- proximo
+fimpara
+
+fimalgoritmo

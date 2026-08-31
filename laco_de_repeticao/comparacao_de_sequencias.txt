@@ -1,0 +1,49 @@
+//26) Em matemática, uma sequência é denominada monótona quando ela preserva ou inverte a relação de ordem de seus elementos. Quando a sequência //preserva a relação dos elementos, é denominada de função crescente. Quando a sequência inverte a relação dos elementos, é denominada função //decrescente. Desta forma temos: • Estritamente Crescente: se a1 < a2 < a3 < .... < an < … • Crescente: se a1 ≤ a2 ≤ a3 ≤ .… ≤ an ≤ ... • //Estritamente Decrescente: se a1 > a2 > a3 > .... > an > … • Decrescente: se a1 ≥ a2 ≥ a3 ≥ .... ≥ an ≥ … • Desordenada: quando os elementos //não estão em ordem. Desenvolva um algoritmo que solicite ao usuário informar 10 números inteiros. O algoritmo deverá verificar qual o tipo de //sequência acima os números informados formam. O algoritmo deve mostrar uma mensagem na tela indicando o tipo de sequência, isto é, //estritamente crescente, crescente, estritamente decrescente, decrescente e desordenada. 
+
+algoritmo "comparação de sequências"
+var anterior,i,maior,menor,igual,valor:inteiro
+inicio
+escreval("Digite o valor número 1: ")
+leia(anterior)
+maior <-0
+menor <-0
+igual <-0
+
+para i de 2 ate 10 faca
+         escreval("Digite o valor número ",i," :")
+         leia (valor)
+
+         //Estritamente Crescente, incrementa a variavel maior
+         se ( anterior < valor) entao
+                  maior <- maior +1
+         fimse
+         //Estritamente Decrescente, incrementa a variavel menor
+         se (anterior > valor) entao
+                  menor <- menor + 1
+         fimse
+        //Números iguais incrementa a variável igual
+         se (anterior = valor) entao
+                  igual <- igual + 1
+         fimse
+         anterior <- valor
+fimpara
+se (maior=9)entao
+         escreval("Sequência Estritamente Crescente!")                          
+senao
+         se (menor=9)entao
+                  escreval("Sequência Estritamente Decrescente!")
+         senao
+                  se(maior + igual = 9)entao
+                           escreval("Sequência Crescente!")
+                  senao
+                           se(menor + igual = 9)entao
+                                    escreval("Sequência Decreescente!")
+                           senao
+                                    escreval("Sequência Desordenada!")
+                           fimse
+                  fimse
+         fimse
+fimse
+fimalgoritmo
+
+//O final tem que ser condicional aninhada para não mostrar dois resultados simultaneamente.

@@ -1,0 +1,43 @@
+//organizar datas por ordem crescente.
+algoritmo "bubblesort datas com flag"
+var
+dia, mes:vetor [0..9] de inteiro
+i,j,aux, trocou: inteiro
+inicio
+escreval ("Informe as 10 datas: ")
+para i de 0 ate 9 faca 
+         escreval ("Dia ", i+1, ": ")
+         leia (dia[i])
+escreval ("Mês ", i+1, ": ")
+         leia (mes[i])
+         escreval()
+fimpara
+
+escreval("Datas digitadas: ") 
+para i de 0 ate 9 faca 
+escreva(dia[i], "/",mes[i], "  ")
+fimpara
+escreval()
+trocou <- 1
+enquanto (trocou = 1) faca // enquanto há trocas entre números significa que ainda está em desordem, então vai para uma nova iteração.
+trocou <- 0 // a cada nova iteração a variável trocou recebe 0.
+	para j de 0 ate 8 faca
+		se (mes[j] > mes[j+1] ou mes[j] = mes[j+1] e dia[j] > dia[j+1]) entao 
+               aux <- mes[j]
+               mes[j] <- mes[j+1]
+               mes[j+1] <- aux
+
+               aux <- dia[j]
+               dia[j] <- dia[j+1]
+               dia[j+1] <- aux
+
+               trocou <- 1 // se houve troca a variável recebe 1.
+          fimse
+         fimpara
+fimenquanto
+escreval("Datas Ordenadas: ")
+para i de 0 ate 9 faca 
+escreva(dia[i], " / ",mes[i], "  ")
+fimpara
+
+fimalgoritmo

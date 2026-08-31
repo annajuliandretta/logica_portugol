@@ -1,0 +1,53 @@
+//40)Desenvolva um algoritmo que leia três valores inteiros que correspondam ao dia, mês e ano e mostre na tela data correspondente ao //dia seguinte. Lembrem-se que abril, junho, setembro e novembro tem 30 dias, fevereiro tem 28 (29 em ano bissexto) e todos os outros //meses tem 31 dias. Para saber se um ano é bissexto: 
+//1. Se o ano for divisível por 4, vá para a etapa 2. Caso contrário, vá para a etapa 5.
+//2. Se o ano for divisível por 100, vá para a etapa 3. Caso contrário, vá para a etapa 4. 
+//3. Se o ano for divisível por 400, vá para a etapa 4. Caso contrário, vá para a etapa 5. 
+//4. O ano é bissexto (ela tem 366 dias). 
+//5. O ano não é um ano bissexto (ela tem 365 dias). Exemplo: Se o usuário digitar dia=28, mês=2 e ano=2016, o algoritmo deverá mostrar na //tela a data do próximo dia: 29/02/2016.
+
+algoritmo "próxima data"
+
+var
+dia,mes,ano:inteiro
+
+inicio
+escreval("Informe o dia: ")
+leia (dia)
+escreval("Informe o mês: ")
+leia (mes)
+escreval("Informe o ano: ")
+leia (ano)
+
+dia <-dia+1
+
+se (dia = 32 e (mes=1 ou mes=3 ou mes=5 ou mes=7 ou mes=8 ou mes=10))entao // os meses estão em parenteses para serem resolvidos primeiro.
+	dia <- 1
+	mes <- mes + 1
+senao
+	se (dia = 31 e (mes=4 ou mes=6 ou mes=9 ou mes=11))entao
+		dia <- 1
+		mes <- mes +1
+	senao
+		se (dia =32 e mes =12)entao
+			dia <- 1
+			mes <- 1
+			ano <- ano +1
+		senao
+			se(dia = 29 e mes=2) entao
+			//verifica se o ano é bissexto.
+				se (ano%4 <> 0)entao
+					dia <-1
+					mes <-3
+				senao
+					se (ano%100 = 0 e ano%400 <> 0)entao
+						dia <- 1
+						mes <- 3
+					fimse
+				fimse
+			fimse         
+		fimse
+	fimse
+fimse
+escreval("Próximo dia: ",dia,"/",mes,"/",ano)
+         
+fimalgoritmo

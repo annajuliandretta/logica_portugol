@@ -1,0 +1,29 @@
+//89) Desenvolva um algoritmo que solicite ao usuário informar um valor inteiro w diversas vezes. Cada vez que o usuário informar o //número, o algoritmo deverá calcular e mostrar na tela os 80 primeiros termos da série definida por:
+//termo1 = w 
+//termo2 = w^2 + 2*w 
+//termo3 = w^3 + 3*w 
+//termo4 = … 
+//O algoritmo vai parar de solicitar valores quando o usuário informar 0 como valor de w. Antes de encerrar a execução do algoritmo, //deve ser mostrado na tela a quantidade de valores informados pelo usuário. 
+
+
+algoritmo "série matemática"
+// Autor : ajandretta
+// Data : 12/05/2026
+var w,i,cont: inteiro
+
+inicio
+cont <-0
+escreval ("Informe o valor de W: ")
+leia (w)
+enquanto (w<>0) faca
+         cont <- cont +1
+escreval("Termo 1: ",w)
+         para i de 2 ate 10 faca
+                  escreval("Termo ",i,": ", w^i+i*w)
+         fimpara
+         escreval() // linha em branco
+         escreval("Informe o valor de W: ")
+         leia(w)
+fimenquanto
+escreval("Foram informados ", cont," valores.")
+fimalgoritmo

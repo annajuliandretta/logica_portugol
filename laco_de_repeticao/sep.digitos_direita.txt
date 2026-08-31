@@ -1,0 +1,14 @@
+//66) Desenvolva um algoritmo que solicite ao usuário informar um número inteiro qualquer. O algoritmo deve mostrar na tela os dígitos do número //na ordem contrária que foram informados. Exemplo: se o valor informado foi 32417, o algoritmo deve mostrar na tela os números 7,1,4,2,3.
+
+algoritmo "sep.digitos começando pelo último "
+var digito, numero: inteiro
+inicio
+escreval("Digite um número: ")
+leia(numero)
+escreval("os numeros na ordem contrária são:")
+enquanto(numero>10) faca
+         escreval(numero % 10)
+         numero <- numero\10
+fimenquanto
+escreval(numero) // para mostrar o primeiro número, pois ele é menor que 10 e não passa pelo laço.
+fimalgoritmo

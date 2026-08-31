@@ -1,0 +1,20 @@
+//9) Desenvolva um algoritmo que solicite ao usuário informar 15 valores inteiros. 
+//O algoritmo deverá contar quantos valores estão no intervalo[10,20] , isto é, 
+//são valores maiores ou iguais a 10 e menores ou iguais a 20. O algoritmo deverá 
+//mostrar na tela a quantidade de valores dentro do intervalo solicitado.
+
+
+algoritmo 
+var
+i,cont,num: inteiro
+inicio
+cont <- 0
+escreval("Digite 15 números: ")
+para i de 1 ate 15 faca
+         leia(num)
+         se (num >= 10 e num <= 20)entao
+                  cont <- cont + 1
+         fimse
+fimpara
+escreval("Foram informados ",cont, " números no intervalo [10:20]")
+fimalgoritmo

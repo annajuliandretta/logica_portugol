@@ -1,0 +1,18 @@
+//39) Desenvolva um algoritmo solicite ao usuário informar dez números inteiros e armazene estes valores em um vetor. Após, o algoritmo //deverá mostrar na tela cada elemento do vetor acompanhado do seu elemento simétrico em relação a sua posição no conjunto: o elemento //simétrico do valor que está na posição 1 é o valor que está na posição 10, o elemento simétrico do valor que está na posição 2 é o //valor que está na posição 9…
+
+algoritmo "ex 39"
+var
+i: inteiro
+vet: vetor[0..9] de inteiro
+inicio
+escreval("Digiite 10 números inteiros: ")
+para i de 0 ate 9 faca
+         leia (vet[i])
+fimpara
+
+escreval("Elementos simétricos: ")
+para i de 0 ate 9 faca
+         escreval (vet[i]," - ",vet[9-i])
+fimpara
+
+fimalgoritmo
